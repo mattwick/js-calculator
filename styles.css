@@ -5,7 +5,14 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #f8f9fa;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .container {
@@ -73,6 +80,7 @@ button:hover {
     border-radius: 10px;
     background-color: #fff;
     padding: 20px;
+    min-height: 280px;
 }
 
 .history h3 {
@@ -81,7 +89,7 @@ button:hover {
 }
 
 .history-list {
-    max-height: 200px;
+    max-height: 250px;
     overflow-y: auto;
 }
 
@@ -91,3 +99,53 @@ button:hover {
     align-items: center;
     margin-bottom: 5px;
 }
+
+.relative-difference-container {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.relative-difference-container h2 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.relative-difference {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.relative-difference .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px; 
+}
+
+.relative-difference button {
+    background-color: #f0ad4e;
+    color: white;
+    font-size: 16px; 
+    padding: 8px 12px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}
+
+.relative-difference .result {
+    display: flex;
+    gap: 5px;
+}
+
+
+
